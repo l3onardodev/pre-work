@@ -40,3 +40,9 @@ RESOLUÇÂO: O querySelector estava a selecionar o ID "app" enquanto que, no htm
 Crie um link no HTML (fora da div `.app`), e adicione à ele um evento de clique.
 O clique nesse botão deverá alternar a visibilidade do `.app`: se o `.app` estiver visível,
 ele deverá ser escondido. Se estiver escondido, o clique deve exibí-lo.
+
+SOLUÇÃO: Esse desafio foi interessante. No arquivo JS, selecionei os elementos com querySelector e os aloquei em variáveis. O exercício pediu que houvesse um botão que representasse um estado (aparecendo ou nao aparecendo a div), por isso criei uma state variable no arquivo js e, por meio dela, segui a logica de mostrar ou esconder o conteúdo. Para alcançar o que queria, adicionei e removi uma classe chamada "hidden", na qual possui como property o display: none. 
+Tentei deixar o botão bonitinho, mas nada muito extraordinário pois acho que esse nao era o foco do desafio. 
+Criei uma classe chamada "preload" na qual faz com os elementos filhos do body tenham suas respectivas property "transition" setada como none até 1/10 de segundos após carregar a pagina. Após isso, as properties "transition" voltam a funcionar normalmente. Fiz isso pois enfrentei um dilema de que, quando a pagina era recarregada, os estilos eram aplicados com o efeito do transition (coisa essa que ficava muito feia) e, por conta disso, usei uma função setInterval no arquivo JS para resolver esse problema.
+
+No geral, curti os desafios! Lezsgo!

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,4 +11,43 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.preload *{
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+.app {
+  transition: all .5s;
+
+  margin: 3em;
+}
+
+.hide-app-anchor {
+  text-decoration: none;
+  color:#354b60;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  padding: .5em 2.5em;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+
+  transition: all .5s;
+}
+
+.hide-app-anchor:hover {
+  background-color: #23313f;
+  color: white;
+}
+
+.hidden {
+  /* display: none - outra alternativa ao opacity sera usar o display: none. Mas ainda nao sei ao certo qual o melhor, estou indo no opacity pois nao há outros conteúdos na pagina (se houvesse, usaria o display, provavelmente).*/
+  opacity: 0;
 }
