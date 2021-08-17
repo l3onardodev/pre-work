@@ -18,11 +18,11 @@ buttonHideApp.addEventListener('click', function(e) {
   e.preventDefault();
 
   if(buttonHideAppState) {
-    buttonHideApp.textContent = 'Hide';
+    buttonHideApp.textContent = 'hide';
     appContainer.classList.remove('hidden');
     buttonHideAppState = !buttonHideAppState;
   } else {
-    buttonHideApp.textContent = 'Show';
+    buttonHideApp.textContent = 'show';
     appContainer.classList.add('hidden');
     buttonHideAppState = !buttonHideAppState;
   }
