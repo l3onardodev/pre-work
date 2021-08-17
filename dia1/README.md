@@ -24,6 +24,8 @@ Ao resolver o primeiro erro, resolva o segundo erro que deverá aparecer no cons
 Uncaught SyntaxError: Cannot use import statement outside a module
 ```
 
+Resolução: Para que eu consigo utilizar import/export em BROWSERS, eu preciso especificar o type do script como "module".
+
 ## Exercício 03
 
 Olhe novamente para o console, e resolva o próximo erro:
