@@ -33,6 +33,7 @@ Olhe novamente para o console, e resolva o próximo erro:
 ```
 main.js:3 Uncaught TypeError: Cannot set property 'innerHTML' of null
 ```
+RESOLUÇÂO: O querySelector estava a selecionar o ID "app" enquanto que, no html file, temos apenas a class "app" e o data-js "app". Como ontem aprendi com o daciuk sobre utilizar o data-js nos arquivos javascript (para que nao ocorra conflito com a class que é usada no CSS), selecionei, pelo querySelector, o data-js.
 
 ## Exercício 04
 
