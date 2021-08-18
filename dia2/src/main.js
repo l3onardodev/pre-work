@@ -1,2 +1,2 @@
-import('/src/immutable.js');
-import('/src/calculator.js');
+import '/src/immutable.js';
+import '/src/calculator.js';
