@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 3</title>
+  </head>
+  <body>
+    <div class="content-container">
+      <section class="first-screen">
+        <h2 class="label-name">Por gentileza, insira seu nome</h2>
+        <form>
+          <input type="text" data-js="nome-pessoa" class="input-name">
+        </form>
+        <button data-js="button-name" class="button-style">prontinho</button>
+      </section>
+    </div>
+    <section class="second-screen hidden">
+      <h2 class="label-second-screen" data-js="label-s-s"></h2>
+    </section>
+    <section class="third-screen hidden">
+      <h2 class="label-color-selector">Escolha uma cor entre as listadas</h2>
+      <form>
+        <select data-js="select-color" class="select-form" multiple>
+        </select>
+      </form>
+      <div class="colors-display-container">
+      </div>
+      <button class="button-style btn-fourth-screen" data-js="button-next">proximo</button>
+    </section>
+    <section class="fourth-screen hidden">
+      <div class="form-input-side">
+        <form class="form-input-cars">
+          <label class="cars-form-labels">Imagem (URL)</label>
+          <input type="text" data-js="image-url">
+          <label class="cars-form-labels">Marca/Modelo</label>
+          <input type="text" data-js="marca-modelo">
+          <label class="cars-form-labels">Ano</label>
+          <input type="number" data-js="ano">
+          <label class="cars-form-labels">Placa</label>
+          <input type="number" data-js="placa">
+          <label class="cars-form-labels">Cor</label>
+          <input type="color" data-js="car-color">
+
+          <button class="btn-form-cars" data-js="car-form-submit">Enviar</button>
+        </form>
+      </div>
+      <div class="table-side">
+        <table class="cars-table" data-js="cars-table">
+          <thead class="thead-styles">
+            <tr class="cars-title-row">
+              <td>Imagem</td>
+              <td>Marca/modelo</td>
+              <td>Ano</td>
+              <td>Placa</td>
+              <td>Cor</td>
+            </tr>
+          </thead>
+          <tbody data-js="cars-table-tbody">
+
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
